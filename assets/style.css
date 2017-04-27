@@ -1,17 +1,11 @@
-a{
-  color:white;
-}
+
+/*SHARED STYLES-- these style attributes are shared across all the web pages--*/
 .icons{
   width:50px;
   height:50px;
 }
 .icons:hover{
   opacity:0.5;
-}
-#profile{
-  width:200px;
-  height:300px;
-  float:left;
 }
 ul{
   margin-left: 850px;
@@ -21,11 +15,14 @@ ul{
 }
 li{
   color: #738769;
-  margin-top: 20px;
+  margin-top: 30px;
   display:inline;
   float:left;
   font-size: 20px;
   margin-left: 20px;
+}
+li:hover{
+  opacity:0.5;
 }
 h1{
   font-size: 40px;
@@ -33,19 +30,15 @@ h1{
   background-color: #738769;
   color:white;
   padding:15px;
+  padding-bottom: 17px;
   margin-left:60px;
   font-family: 'Georgia', Times, Times New Roman, serif;
 }
-#about{
-  float:left;
-  background-image: url(images/bg-2.png);
-  width:650px;
-  margin-left: 60px;
-  padding:20px;
-  margin-top: 30px;
-  margin-bottom: 50px;
+h1:hover{
+  background-color: white;
+  color: #738769;
 }
-#portfolio{
+#content{
   float:left;
   background-image: url(images/bg-2.png);
   width:650px;
@@ -53,16 +46,6 @@ h1{
   padding:20px;
   margin-top: 30px;
   margin-bottom: 50px;
-}
-#contact{
-  float:left;
-  background-image: url(images/bg-2.png);
-  width:650px;
-  margin-left: 60px;
-  padding:20px;
-  margin-top: 30px;
-  margin-bottom: 50px;
-  text-align: left;
 }
 h2{
   font-size: 35px;
@@ -71,15 +54,10 @@ h2{
   color:#5d7054;
   font-weight: 500;
 }
-#text{
-  text-align: left;
-  margin-left: 250px;
-  
-}
 #connect{
   float:left;
   font-size: 30px;
-  background-color: white;
+  background-image: url(images/bg-2.png);
   margin-left: 100px;
   padding: 10px;
   margin-top: 30px;
@@ -89,55 +67,56 @@ h2{
 #foot{
   text-align: center;
   color:white;
-  background-color: #738769;
+  background-color: #435140;
   clear:both;
+  padding-bottom: 10px;
 }
 #foot p{
   padding:30px;
   color:white;
+}
+hr {
+    height: 4px;
+    background-color: #738769;;
+}
+h3{
+  color:#5d7054;
+  font-weight: 500;
+}
+a{
+  text-decoration: none;
+}
+#page {
+  background-image: url(images/bg-3.png);
+  width: 100%;
+  overflow-y: hidden;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+/*INDEX PAGE-- these style attributes are specific to the about page----------*/
+#profile{
+  width:200px;
+  height:300px;
+  float:left;
+  margin:10px 30px 10px 30px;
 }
 p{
   font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   color:#605f5f;
   margin:10px;
   line-height: 150%;
+  font-size: 16px;
 }
-hr {
-    height: 4px;
-    background-color: #738769;;
+a:hover{
+  opacity: 0.5;
 }
-#about hr{
-  height:3px;
-  background-color: #738769;
-}
-#portfolio hr{
-  height:3px;
-  background-color: #738769;
-}
-#contact hr{
-  height:3px;
-  background-color: #738769;
-}
-#connect hr{
-  height:3px;
-  background-color: #738769;
-}
-h3{
-  color:#5d7054;
-  font-weight: 500;
-}
-.work{
-  width:150px;
-  height:150px;
-  float:left;
-  margin-top: 10px;
-}
+
+/*PORTFOLIO-- these style attributes are specific to the portfolio page-------*/
+
 #calc{
-  /*background-color: grey;*/
 margin-left: 100px;
 margin-top: 20px;
-/*height: 200px;
-width: 200px;*/
 }
 #calc:hover{
   opacity: 0.5;
@@ -152,7 +131,6 @@ width: 200px;*/
   margin-left:-10px;
   font-family: 'Georgia', Times, Times New Roman, serif;
 }
-
 #weather{
 margin-left: 400px;
 margin-bottom: 100px;
@@ -208,13 +186,38 @@ top: -70px;
   margin-left:-50px;
   font-family: 'Georgia', Times, Times New Roman, serif;
 }
-a{
-  text-decoration: none;
+.work{
+  width:150px;
+  height:150px;
+  float:left;
+  margin-top: 10px;
 }
 
-#page {
-  background-image: url(images/bg-3.png);
-  width: 100%;
-  /*height:880px;*/
-  overflow-y: hidden;
+/*CONTACT- these style attributes are specific to the contact page-----------*/
+#contact hr{
+  height:3px;
+  background-color: #738769;
 }
+.details{
+  margin-left: 10px;
+}
+.submit{
+  font-size: 20px;
+  background-color: #738769;
+  border:none;
+  color:white;
+  padding: 10px;
+  margin: 10px;
+}
+.submit:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+input{
+  font-size: 15px;
+}
+.formHead{
+  font-size: 20px;
+}
+
+/*------------------------------------------END--------------------------------*/
